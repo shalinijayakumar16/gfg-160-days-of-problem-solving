@@ -1,0 +1,17 @@
+You are given an array of integers arr[]. Your task is to reverse the given array.
+
+
+
+class Solution {
+    public void reverseArray(int arr[]) {
+        // code here
+        int n = arr.length;
+        int i,j;
+        for(i=0,j=n-1;i<j;i++,j--)
+        {
+            int temp=arr[i];
+            arr[i] = arr[j];
+            arr[j]= temp;
+        }
+    }
+}
